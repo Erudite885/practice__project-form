@@ -1,8 +1,16 @@
 import React from 'react';
 
-const CourseGoalItem = () => {
+import styles from './CourseGoalItem.module.css';
+
+const CourseGoalItem = (props) => {
+
+    const deleteHandler = () => {
+        props.onDelete(props.id);
+    }
+
+
   return (
-    <div>CourseGoalItem</div>
+    <li className={styles.goalItem} onClick={deleteHandler}>{props.children}</li>
   );
 };
 
