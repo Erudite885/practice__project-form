@@ -9,13 +9,12 @@ const CourseInput = () => {
 
     const titleChangeHandler = (e) => {
         setEnteredTitle(e.target.value);
-        // console.log(e.target.value)
+        
     };
 
     const submitHandler = (e) => {
         e.preventDefault();
-        // console.log(e)
-        // enteredTitle('')
+        
         const data = {
             title: enteredTitle
         }
