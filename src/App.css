@@ -7,3 +7,9 @@
 body {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+#goals {
+    padding: 5px 45px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
