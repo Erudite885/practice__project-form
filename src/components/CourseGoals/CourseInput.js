@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 
-
 import styles from './CourseInput.module.css';
 
-const CourseInput = () => {
+const CourseInput = (props) => {
 
     const [enteredTitle, setEnteredTitle] = useState('');
 
@@ -14,11 +13,7 @@ const CourseInput = () => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        
-        const data = {
-            title: enteredTitle
-        }
-        console.log(data)
+        props.onAddGoal(enteredTitle)
         setEnteredTitle('')
     };
 
