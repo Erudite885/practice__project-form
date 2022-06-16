@@ -10,7 +10,9 @@ const CourseGoalItem = (props) => {
 
 
   return (
-    <li className={styles.goalItem} onClick={deleteHandler}>{props.children}</li>
+    <li 
+    className={styles.goalItem} 
+    onClick={deleteHandler}> {props.children} </li>
   );
 };
 

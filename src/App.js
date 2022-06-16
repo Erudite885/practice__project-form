@@ -39,7 +39,7 @@ const App = () => {
 
     if (CourseGoals.length > 0){
         content = (
-            <CourseGoalList items={CourseGoals} onDelete={deleteItemHandler} />
+            <CourseGoalList items={CourseGoals} onDeleteItem={deleteItemHandler} />
         );
     };
 

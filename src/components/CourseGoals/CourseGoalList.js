@@ -5,12 +5,13 @@ import styles from './CourseGoalList.module.css';
 
 const CourseGoalList = (props) => {
   return (
-    <ul className={styles.goalList}>
+    <ul 
+    className={styles.goalList}>
         {props.items.map(goal => (
             <CourseGoalItem 
             key={goal.id} 
             id={goal.id} 
-            onDelete={props.onDeleteitem}> {goal.text} </CourseGoalItem>
+            onDelete={props.onDeleteItem}> {goal.text} </CourseGoalItem>
         ))}
         
     </ul>

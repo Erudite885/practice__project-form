@@ -31,7 +31,7 @@ const CourseInput = (props) => {
         <form onSubmit={submitHandler}>
             <div className={styles.formControl}>
                 <label className={styles.label}>Course Goal </label>
-                <input type="text" value={enteredTitle} onChange={titleChangeHandler} className={`${styles.input} ${!isValid && styles.invalid}`}  />
+                <input type="text" value={enteredTitle} onChange={titleChangeHandler} className={`${styles.input} ${!isValid && styles.invalid}`} />
             </div>
             <button type="submit" className={styles.button}> Add Goal </button>
         </form>
