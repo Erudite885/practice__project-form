@@ -1,23 +1,20 @@
 import React, { useState } from 'react';
 
-import CourseGoalList from './components/CourseGoals/CourseGoalList';
 import CourseInput from './components/CourseGoals/CourseInput';
+import CourseGoalList from './components/CourseGoals/CourseGoalList'
 import './App.css';
 
 
 const App = () => {
     const [CourseGoals, setCourseGoals] = useState([
         {
-            id: 'g1',
-            text: 'Course Overview'
+            id: 'g1', text: 'Course Overview'
         }, 
         {
-            id: 'g2',
-            text: 'Course Preview'
+            id: 'g2', text: 'Course Preview'
         }, 
         {
-            id: 'g3',
-            text: 'Course Outline'
+            id: 'g3', text: 'Course Outline'
         }
     ]);
 
@@ -37,7 +34,7 @@ const App = () => {
     };
 
     let content = (
-        <p>No goals found.</p>
+        <p style={{ textAlign: 'center' }}>No goals found.</p>
     );
 
     if (CourseGoals.length > 0){
