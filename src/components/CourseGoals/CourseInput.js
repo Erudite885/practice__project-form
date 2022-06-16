@@ -13,6 +13,9 @@ const CourseInput = (props) => {
 
     const submitHandler = (e) => {
         e.preventDefault();
+        if (enteredTitle.trim().length === 0 ){
+            return;
+        }
         props.onAddGoal(enteredTitle)
         setEnteredTitle('')
     };
