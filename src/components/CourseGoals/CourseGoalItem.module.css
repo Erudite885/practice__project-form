@@ -1,8 +1,10 @@
 .goalItem {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 1rem 0;
     color: rgba(184, 250, 98, 0.973);
     background: rgb(5, 10, 4);
     box-shadow: 0 2px 8px rgba(0, 0, 0 ,0.26);
     padding: 1rem 2rem;
+    border-radius: 5px;
     cursor: pointer;
 }
