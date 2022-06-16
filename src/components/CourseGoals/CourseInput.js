@@ -5,8 +5,12 @@ import styles from './CourseInput.module.css';
 const CourseInput = (props) => {
 
     const [enteredTitle, setEnteredTitle] = useState('');
+    const [isValid, setIsValid] = useState(true);
 
     const titleChangeHandler = (e) => {
+        if (e.target.value.trim().length > 0){
+            setIsValid(true);
+        }
         setEnteredTitle(e.target.value);
         
     };
@@ -14,6 +18,7 @@ const CourseInput = (props) => {
     const submitHandler = (e) => {
         e.preventDefault();
         if (enteredTitle.trim().length === 0 ){
+            setIsValid(false);
             return;
         }
         props.onAddGoal(enteredTitle)
@@ -26,7 +31,7 @@ const CourseInput = (props) => {
         <form onSubmit={submitHandler}>
             <div className={styles.formControl}>
                 <label className={styles.label}>Course Goal </label>
-                <input type="text" value={enteredTitle} onChange={titleChangeHandler} className={styles.input} />
+                <input type="text" value={enteredTitle} onChange={titleChangeHandler} className={styles.input} style={{ borderColor: !isValid ? 'red' : '#ccc'}} />
             </div>
             <button type="submit" className={styles.button}> Add Goal </button>
         </form>
