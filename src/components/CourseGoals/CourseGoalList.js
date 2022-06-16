@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CourseGoalItem from './components/CourseGoals/CourseGoalItem';
+import CourseGoalItem from './CourseGoalItem';
 import styles from './CourseGoalList.module.css';
 
 const CourseGoalList = (props) => {
