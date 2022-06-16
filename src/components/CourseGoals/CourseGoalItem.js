@@ -6,7 +6,7 @@ const CourseGoalItem = (props) => {
 
     const deleteHandler = () => {
         props.onDelete(props.id);
-    }
+    };
 
 
   return (
