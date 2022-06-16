@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalList';
+import CourseGoalList from './components/CourseGoals/CourseGoalList';
 import CourseInput from './components/CourseGoals/CourseInput';
 import './App.css';
 
@@ -49,10 +49,10 @@ const App = () => {
   return (
   <div>
     <div>CourseGoals App</div>
-    <CourseInput />
-    {/* <section id='goals'>
-        {content}
-    </section> */}
+    <CourseInput onAddGoal={addGoalHandler} />
+     <section id='goals'>
+         {content}
+    </section> 
   </div>
   );
 }
