@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import AddUser from './components/Users/AddUser';
 import CourseInput from './components/CourseGoals/CourseInput';
 import CourseGoalList from './components/CourseGoals/CourseGoalList'
 import './App.css';
@@ -50,6 +51,10 @@ const App = () => {
      <section id='goals'>
          {content}
     </section> 
+    <hr></hr>
+    <AddUser />
+
+
   </div>
   );
 }
